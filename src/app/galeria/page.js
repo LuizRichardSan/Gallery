@@ -1,24 +1,19 @@
 import Pin from '../components/pin'
 import Link from 'next/link'
 import { GoChevronLeft } from "react-icons/go";
+import Data from '../components/data'
 
+export default function Gallery() {
+    return (
+        <>
+            <Link href="/"> <GoChevronLeft className='absolute z-50 text-pink-400 top-1 left-1 text-5xl' /></Link>
+            <div className=' bg-stone-900 container'>
 
-export default function Gallery(){
-    return(
-    <>
-        <Link href="/"> <GoChevronLeft className='absolute z-50 text-pink-400 top-1 left-1 text-5xl'/></Link>
-        <div className=' bg-stone-900 container'>
-        <Pin pinSize={"small"} />
-        <Pin pinSize={"medium"} />
-        <Pin pinSize={"large"} />
-        <Pin pinSize={"small"} />
-        <Pin pinSize={"medium"} />
-        <Pin pinSize={"large"} />
-        <Pin pinSize={"small"} />
-        <Pin pinSize={"medium"} />
-        <Pin pinSize={"large"} />
+                {Data && Data.map((Data) => <Pin key={Data.id} pinSize={Data.size}
+                    imgSrc={Data.imgSrc}
+                    link={Data.link} />)}
 
-        </div>
-    </>
+            </div>
+        </>
     )
 }

@@ -10,7 +10,6 @@ module.exports = {
       height: {
         '128': '54rem', 
       },
-    
         gridAutoRows: {
           '2fr': '(0, 5fr)',
         },
