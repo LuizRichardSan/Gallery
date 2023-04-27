@@ -13,7 +13,7 @@ export default function Login() {
           <h1 className='text-stone-900 text-3xl'>Bem-vindo,</h1>
           <p className='text-gray-600 text-2xl'>Login para continuar!</p>
         </div>
-        <form className='h-1/3 flex flex-col gap-5'>
+        <form className='h-56 flex flex-col gap-5'>
           <div className='flex flex-col text-gray-600'>
             <label for="email" >Id de Usuário</label>
             <input required className='h-11' type='text' name='user' placeholder='Seu Id'>
@@ -24,7 +24,7 @@ export default function Login() {
             <input required className='h-11 ' type='password' name='password' placeholder='Sua senha'>
             </input>
           </div>
-          <button className='h-16 bg-pink-400 hover:bg-pink-500 rounded-lg text-white font-bold shadow-xl' type='submit'>Entrar</button>
+          <button className='h-16 bg-pink-500 hover:bg-pink-600 rounded-lg text-white font-bold shadow-xl' type='submit'>Entrar</button>
         </form>
         <p className='text-center'>Área de Administração</p>
       </div>

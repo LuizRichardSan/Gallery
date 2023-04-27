@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import Link from 'next/link'
+
 import image1 from '../../img/preview/prev1.jpg'
 import image2 from '../../img/preview/prev2.jpg'
 import image3 from '../../img/preview/prev3.jpg'
@@ -17,7 +19,7 @@ export default function Slider(){
                     </div>
                 ))}
             </div>
-            <button type='button' className='absolute z-50 bg-pink-400 hover:bg-pink-500 text-white px-5 py-3 rounded-lg bottom-20 left-5 text-center'>Ver Mais</button>
+            <button type='button' className='absolute z-50 bg-pink-400 hover:bg-pink-500 text-white px-5 py-3 rounded-lg bottom-20 left-5 text-center'><Link href='/galeria'> Ver Mais</Link></button>
         </>
     )
 }

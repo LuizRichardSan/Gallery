@@ -20,8 +20,8 @@ export default function Home() {
       em cada uma das minhas fotos.
       </p>
     </div>
-    <button type='button' className='w-2/3 h-10 flex justify-center items-center gap-3 absolute bottom-5 left-5 rounded-lg bg-pink-600 hover:bg-pink-700 text-white text-center'>
-      Comece por aqui <VscChevronRight className='mt-0' />
+    <button type='button' className='w-2/3 h-10  absolute bottom-5 left-5 rounded-lg bg-pink-600 hover:bg-pink-700 text-white text-center'>
+    <Link className='flex justify-center items-center gap-3'  href='#about' > Comece por aqui <VscChevronRight className='mt-0' /> </Link> 
     </button>
     <About />
     </>

@@ -5,7 +5,7 @@ import Slider from '../components/slider'
 
 export default function About(){
     return(
-        <section className='w-screen h-128  bg-gradient-to-b from-stone-900 to-stone-800'>
+        <section id='about' className='w-screen h-128  bg-gradient-to-b from-stone-900 to-stone-800'>
     <div className="w-screen h-32 px-11 flex justify-around items-center">
         <Image src={Foto} className='w-24 h-24 mt-10 rounded-full' alt='Icone da foto'/>
         <div className="flex flex-col mt-10">

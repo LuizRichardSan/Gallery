@@ -1,7 +1,12 @@
-export default function Pin(pinSize){
+ import Image from 'next/image'
+ import test from '../../img/preview/prev3.jpg'
+
+ export default function Pin({pinSize}){
     return(
-        <>
-        <div className={`w-40 h-80 mt-5 rounded-2xl bg-slate-600 ${pinSize}`}></div>
-        </>
+        <div className={`pin ${pinSize}`}>
+            <Image
+             className='mainPic' 
+             src={test} alt='imagem'/>
+        </div>
     )
 }

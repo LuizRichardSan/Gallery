@@ -10,9 +10,9 @@ module.exports = {
       height: {
         '128': '54rem', 
       },
-      gridTemplateColumns: {
-        // grid configuration  
-        '16': 'repeat(auto-fill, 300px)',
+    
+        gridAutoRows: {
+          '2fr': '(0, 5fr)',
         },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
