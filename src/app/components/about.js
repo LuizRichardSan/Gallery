@@ -9,7 +9,7 @@ export default function About(){
     <div className="w-screen h-32 px-11 flex justify-around items-center">
         <Image src={Foto} className='w-24 h-24 mt-10 rounded-full' alt='Icone da foto'/>
         <div className="flex flex-col mt-10">
-        <h2 className="font-bold text-center text-pink-400 text-xl ">3</h2>
+        <h2 className="font-bold text-center text-pink-400 text-xl ">9</h2>
         <p className='text-pink-400 text-xl'>Fotos</p>
         </div>
     </div>

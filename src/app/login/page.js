@@ -7,8 +7,8 @@ export default function Login() {
   return (
     <>
     <div className='w-screen h-screen flex justify-center items-center'>
-     <Link href="/"> <GoChevronLeft className='absolute text-pink-400 top-1 left-1 text-5xl'/></Link>
-      <div className='w-5/6 h-5/6 flex flex-col justify-around'>
+     <Link href="/"> <GoChevronLeft className='absolute text-pink-400 top-1 left-1 text-5xl sm:hidden'/></Link>
+      <div className='w-5/6 h-5/6 sm:w-80 flex flex-col justify-around'>
         <div className='w-full text-left'>
           <h1 className='text-stone-900 text-3xl'>Bem-vindo,</h1>
           <p className='text-gray-600 text-2xl'>Login para continuar!</p>

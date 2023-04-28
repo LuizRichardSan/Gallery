@@ -10,7 +10,7 @@ export default function Slider(){
     const images = [image1, image2, image3]
     return(
         <>
-            <div className='z-50 h-full flex'>
+            <div className='z-50 h-full flex sm:justify-center sm:w-screen'>
                 <div id='btn-left' className='bg-tranparent w-3/6 h-96 absolute'></div>
                 <div id='btn-right' className='bg-tranparent right-0 w-3/6 h-96 absolute'></div>
                 {images.map(image => (
@@ -19,7 +19,7 @@ export default function Slider(){
                     </div>
                 ))}
             </div>
-            <button type='button' className='absolute z-50 bg-pink-400 hover:bg-pink-500 text-white px-5 py-3 rounded-lg bottom-20 left-5 text-center'><Link href='/galeria'> Ver Mais</Link></button>
+            <button type='button' className='absolute z-50 bg-pink-400 hover:bg-pink-500 text-white px-5 py-3 rounded-lg bottom-20 left-5 text-center sm:left-1/2'><Link href='/galeria'> Ver Mais</Link></button>
         </>
     )
 }
