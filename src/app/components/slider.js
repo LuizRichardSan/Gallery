@@ -14,7 +14,7 @@ export default function Slider(){
                 <div id='btn-left' className='bg-tranparent w-3/6 h-96 absolute'></div>
                 <div id='btn-right' className='bg-tranparent right-0 w-3/6 h-96 absolute'></div>
                 {images.map(image => (
-                    <div className='h-4/6 w-80 px-3' key={image}>
+                    <div className='h-4/6 w-80 px-3' key={image.id}>
                         <Image className=' w-full h-full rounded-xl' src={image} alt='text'/>
                     </div>
                 ))}

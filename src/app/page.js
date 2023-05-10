@@ -10,7 +10,7 @@ import { VscChevronRight } from "react-icons/vsc";
 export default function Home() {
   return (
     <>
-    <Nav />
+    <Nav/>
     <div className='w-screen h-screen absolute'></div>
     <div id='body' className='w-screen h-screen'></div>
     <div className='w-2/3 h-11 absolute bottom-48 left-5 mb-5'>
@@ -21,7 +21,7 @@ export default function Home() {
       </p>
     </div>
     <button type='button' className='w-2/3 h-10  absolute bottom-5 left-5 rounded-lg bg-pink-600 hover:bg-pink-700 text-white text-center sm:w-52'>
-    <Link className='flex justify-center items-center gap-3'  href='#about' > Comece por aqui <VscChevronRight className='mt-0' /> </Link> 
+    <Link className='flex justify-center items-center gap-3' href={'/#about'}> Comece por aqui <VscChevronRight className='mt-0' /> </Link> 
     </button>
     <About />
     </>

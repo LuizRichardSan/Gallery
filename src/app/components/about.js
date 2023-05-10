@@ -5,7 +5,8 @@ import Slider from '../components/slider'
 
 export default function About(){
     return(
-        <section id='about' className='w-screen h-128  bg-gradient-to-b from-stone-900 to-stone-800'>
+        <>
+    <div id='about' className='w-screen h-128  bg-gradient-to-b from-stone-900 to-stone-800'>
     <div className="w-screen h-32 px-11 flex justify-around items-center">
         <Image src={Foto} className='w-24 h-24 mt-10 rounded-full' alt='Icone da foto'/>
         <div className="flex flex-col mt-10">
@@ -19,6 +20,7 @@ export default function About(){
     <div className='relative h-2/3 mt-5 flex shrink-0 curso-grab overflow-x-auto max-w-screen'>
         <Slider/>
     </div>
-    </section>
+    </div>
+        </>
     )
 }
