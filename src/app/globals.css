@@ -15,6 +15,7 @@ body{
     grid-template-columns: repeat(auto-fill, 180px);
     grid-auto-rows: 10px;
     justify-content: center;
+    touch-action: none;
 }
 
 .pin {
@@ -24,7 +25,7 @@ body{
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    touch-action: manipulation;
+    touch-action: none;
 }
 
 .pin:active {
@@ -32,11 +33,13 @@ body{
     z-index: 999;
     transition: 0.5s;
     border-radius: 0;
-    touch-action: manipulation;
+    touch-action: none;
+    cursor: none;
 }
 
 .container:active > .pin:not(:hover) {
     transform: scale(.9);
+
 }
 
 .container:active > .pin:not(:active) {
