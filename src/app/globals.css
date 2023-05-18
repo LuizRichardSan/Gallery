@@ -26,6 +26,22 @@ body{
     cursor: pointer;
 }
 
+.pin:active {
+    transform: scale(1.15) translateZ(0);
+    z-index: 999;
+    transition: 0.5s;
+    border-radius: 0;
+}
+
+.container:active > .pin:not(:hover) {
+    transform: scale(.9);
+}
+
+.container:active > .pin:not(:active) {
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+    transition: 0.5s;
+}
+
 .small{
     grid-row-end: span 26;
 }
