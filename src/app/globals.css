@@ -15,7 +15,6 @@ body{
     grid-template-columns: repeat(auto-fill, 180px);
     grid-auto-rows: 10px;
     justify-content: center;
-    touch-action: none;
 }
 
 .pin {
@@ -25,24 +24,21 @@ body{
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    touch-action: none;
 }
 
-.pin:active {
+.pin:hover {
     transform: scale(1.15) translateZ(0);
     z-index: 999;
     transition: 0.5s;
     border-radius: 0;
-    touch-action: none;
     cursor: none;
 }
 
-.container:active > .pin:not(:hover) {
+.container:hover > .pin:not(:hover) {
     transform: scale(.9);
-
 }
 
-.container:active > .pin:not(:active) {
+.container:hover > .pin:not(:hover) {
     filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
     transition: 0.5s;
 }
