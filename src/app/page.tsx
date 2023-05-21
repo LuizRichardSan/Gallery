@@ -1,10 +1,11 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import Fundo from '../img/fundo.jpg'
 import './styles/style-login.css'
 import Nav from './components/nav'
 import About from './components/about'
-import { VscChevronRight } from "react-icons/vsc";
+import BtnScroll from './components/btn-scroll'
+import Slider from './components/slider'
+import { Link } from "react-scroll/modules"
 
 
 export default function Home() {
@@ -20,10 +21,8 @@ export default function Home() {
       em cada uma das minhas fotos.
       </p>
     </div>
-    <button type='button' className='w-2/3 h-10  absolute bottom-5 left-5 rounded-lg bg-pink-600 hover:bg-pink-700 text-white text-center sm:w-52'>
-    <Link className='flex justify-center items-center gap-3' href={'/#about'}> Comece por aqui <VscChevronRight className='mt-0' /> </Link> 
-    </button>
-    <About />
+    <BtnScroll />
+    <About><Slider id={'test1'}/></About>
     </>
   )
 }
